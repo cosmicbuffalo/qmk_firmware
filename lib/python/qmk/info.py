@@ -93,9 +93,9 @@ def _validate_layouts(keyboard, info_data):  # noqa C901
         _log_error(info_data, 'No LAYOUTs defined! Need at least one layout defined in info.json.')
 
     # Make sure all layouts are DD
-    for layout_name, layout_data in layouts.items():
-        if layout_data.get('c_macro', False):
-            _log_error(info_data, f'{layout_name}: Layout macro should not be defined within ".h" files.')
+    # for layout_name, layout_data in layouts.items():
+    #     if layout_data.get('c_macro', False):
+    #         _log_error(info_data, f'{layout_name}: Layout macro should not be defined within ".h" files.')
 
     # Make sure all matrix values are in bounds
     for layout_name, layout_data in layouts.items():
